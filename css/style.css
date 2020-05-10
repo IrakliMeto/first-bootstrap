@@ -8,19 +8,12 @@ body {
   top: 0;
 }
 
-.container-size {
-  max-width: 1360px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .container-box {
-  height: 600px;
+  margin-top: 60px;
 }
 
 .carousel-size {
   position: relative;
-  height: 600px;
 }
 
 .banner-title {
@@ -28,8 +21,26 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 59px;
+  font-size: 16px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .banner-title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner-title {
+    font-size: 59px;
+  }
 }
 
 .banner-text {
@@ -37,8 +48,30 @@ body {
   top: 60%;
   left: 50%;
   transform: translate(-50%);
-  font-size: 18px;
+  font-size: 8px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .banner-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner-text {
+    font-size: 24px;
+  }
+}
+
+.container__text {
+  text-align: center;
 }
 
 .image-box {
@@ -83,7 +116,7 @@ body {
   width: 50%;
 }
 
-.different-font {
+.container__icons {
   font-family: "Lato", sans-serif;
 }
 
@@ -92,7 +125,7 @@ body {
 }
 
 .card-logo {
-  text-align: center;
+  align-items: center;
 }
 
 .card-logo__text1 {
@@ -126,9 +159,23 @@ body {
   font-weight: 200;
 }
 
+@media screen and (min-width: 768px) {
+  .tour-value {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
 .card-link {
   font-size: 18px;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .card-link {
+    font-size: 26px;
+    font-weight: 500;
+  }
 }
 
 .footer--color {
@@ -137,14 +184,30 @@ body {
 
 .footer {
   flex-wrap: wrap;
-  height: 240px;
+  height: auto;
+}
+
+.footer--spacing {
+  margin-top: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer--spacing {
+    margin-top: 26px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer--spacing {
+    margin-top: 0;
+  }
 }
 
 .footer__form {
   display: flex;
   width: 100%;
   min-width: 200px;
-  margin-top: 20px;
+  margin-top: 4pxpx;
   z-index: 2;
 }
 
