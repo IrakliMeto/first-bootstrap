@@ -8,6 +8,22 @@ body {
   top: 0;
 }
 
+.dropdown--visibility {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown--visibility {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown--visibility {
+    display: none;
+  }
+}
+
 .container-box {
   margin-top: 60px;
 }
